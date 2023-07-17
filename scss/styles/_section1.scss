@@ -1,0 +1,29 @@
+.s-1 {     
+    background-image: url("../../images/Rectangle 1.png");     
+    & > div {
+        @include s1div;
+        & > div {
+            height: 144px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                color: #dd1c1c;
+                font-family: Helvetica;
+                font-size: 79px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            h6 {
+                color: #c72828;
+                font-family: Helvetica;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        } 
+     }     
+}

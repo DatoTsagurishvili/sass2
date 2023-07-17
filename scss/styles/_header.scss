@@ -1,0 +1,35 @@
+header {
+    & > div {
+        @extend %cont;
+        justify-content: space-between;
+        align-items: center;
+        .fa-solid {
+            display: none;
+            @media (max-width: 620px) {
+                 display:inline-block
+            }          
+        }
+        nav {
+            width: 554px;
+            @media (max-width: 620px) {
+                display:none
+           }      
+            div {
+                width: 100%;
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        color: #636060;
+                        font-family: Helvetica;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }      
+    }
+}
