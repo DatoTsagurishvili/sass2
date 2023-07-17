@@ -60,16 +60,17 @@ a {
   box-sizing: border-box;
 }
 
-header > div {
+.s-2 .container, header > div {
   margin: 0 auto;
-  max-width: 1158px;
-  width: 100%;
+  max-width: 1273px;
+  width: 97%;
   display: flex;
 }
 
 header > div {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 18px;
 }
 header > div .fa-solid {
   display: none;
@@ -105,16 +106,18 @@ header > div nav div ul li {
 }
 
 .s-1 {
-  background-image: url("../../images/Rectangle 1.png");
-  background-color: white;
+  background-image: url("../images/r1.jpg");
+  background-color: rgb(95, 95, 95);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 84px;
 }
 .s-1 > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 606px;
 }
 .s-1 > div > div {
   height: 144px;
@@ -123,18 +126,142 @@ header > div nav div ul li {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 624px) {
+  .s-1 > div > div {
+    text-align: center;
+    width: 80%;
+  }
+}
 .s-1 > div > div h1 {
-  color: #dd1c1c;
+  color: #fff;
   font-family: Helvetica;
   font-size: 79px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 360px) {
+  .s-1 > div > div h1 {
+    font-size: 50px;
+  }
+}
 .s-1 > div > div h6 {
-  color: #c72828;
+  color: #fff;
   font-family: Helvetica;
   font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 360px) {
+  .s-1 > div > div h6 {
+    font-size: 12px;
+  }
+}
+
+.s-2 .container {
+  justify-content: space-between;
+}
+@media (max-width: 1085px) {
+  .s-2 .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.s-2 .container .texts {
+  height: 207px;
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s-2 .container .texts .title {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s-2 .container .texts .title h1 {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .texts .title h2 {
+  color: #010101;
+  font-family: Helvetica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .texts p {
+  width: 100%;
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .cards {
+  width: 916px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .s-2 .container .cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 1085px) {
+  .s-2 .container .cards {
+    width: 90%;
+  }
+}
+.s-2 .container .cards > div {
+  width: 286px;
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .s-2 .container .cards > div {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 1085px) {
+  .s-2 .container .cards > div {
+    margin: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .s-2 .container .cards > div {
+    margin: 15px 0;
+  }
+}
+.s-2 .container .cards > div div h2 {
+  color: #343232;
+  font-family: Helvetica;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s-2 .container .cards > div div p {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
